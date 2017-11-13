@@ -1,5 +1,5 @@
-FROM node:8-alpine
-LABEL maintainer "Ash Wilson"
+FROM node:6.12.0-alpine
+LABEL maintainer "Nick McCready"
 
 RUN apk add --no-cache git build-base automake autoconf linux-headers && \
   git clone https://github.com/facebook/watchman.git /tmp/watchman-src && \
